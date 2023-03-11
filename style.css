@@ -1,0 +1,21 @@
+html,
+body {
+  padding: 0;
+  margin: 0;
+}
+* {
+  box-sizing: border-box;
+}
+body {
+  background: linear-gradient(to right, #f3f4ff, #f0f8ff);
+}
+h1 {
+  text-align: center;
+}
+.card {
+  width: 700px;
+  height: 300px;
+  margin: 0 auto;
+  box-shadow: 15px 15px 15px rgba(0, 0, 0, 0.2);
+  background-color: white;
+}
