@@ -9,13 +9,57 @@ body {
 body {
   background: linear-gradient(to right, #f3f4ff, #f0f8ff);
 }
-h1 {
+.header {
+  position: relative;
   text-align: center;
+  margin-bottom: 50px;
 }
-.card {
+h1::after {
+  position: absolute;
+  content: "";
+  height: 3px;
+  width: 130px;
+  left: 50%;
+  bottom: -20px;
+  transform: translateX(-50%);
+  background-color: blue;
+}
+.review--box {
   width: 700px;
   height: 300px;
   margin: 0 auto;
   box-shadow: 15px 15px 15px rgba(0, 0, 0, 0.2);
   background-color: white;
+  border-radius: 10px;
+}
+.card {
+  /* display: flex; */
+  flex-direction: row;
+}
+.img {
+  height: 80px;
+  width: 80px;
+  margin-top: 30px;
+}
+
+.profile--details {
+  display: flex;
+  gap: 2rem;
+  margin-left: 40px;
+  margin-bottom: 40px;
+}
+.info {
+  line-height: 10px;
+  margin-top: 30px;
+}
+.spec {
+  color: rgba(0, 0, 0, 0.4);
+}
+.desc {
+  width: 600px;
+  /* text-align: center; */
+  margin-left: 40px;
+}
+::selection {
+  background-color: blue;
 }
