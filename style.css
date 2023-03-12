@@ -25,16 +25,24 @@ h1::after {
   background-color: blue;
 }
 .review--box {
+  position: relative;
   width: 700px;
   height: 300px;
   margin: 0 auto;
   box-shadow: 15px 15px 15px rgba(0, 0, 0, 0.2);
   background-color: white;
   border-radius: 10px;
+  /* overflow: hidden; */
 }
+
 .card {
-  /* display: flex; */
-  flex-direction: row;
+  /* max-width: 700px; */
+  height: 300px;
+  padding: 40px;
+  color: #777;
+  line-height: 22px;
+  background-color: white;
+  position: relative;
 }
 .img {
   height: 80px;
@@ -44,22 +52,53 @@ h1::after {
 
 .profile--details {
   display: flex;
-  gap: 2rem;
-  margin-left: 40px;
+  align-items: center;
   margin-bottom: 40px;
 }
-.info {
-  line-height: 10px;
-  margin-top: 30px;
+#slide {
+  width: 100%;
+  padding-right: 60px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: 1s;
+}
+.info .name {
+  font-size: 26px;
+  color: blue;
+  /* line-height: 10px; */
+  margin-bottom: 8px;
 }
 .spec {
   color: rgba(0, 0, 0, 0.4);
 }
 .desc {
   width: 600px;
-  /* text-align: center; */
-  margin-left: 40px;
+  color: rgba(0, 0, 0, 0.7);
 }
 ::selection {
   background-color: blue;
+}
+.slide--bar {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  position: absolute;
+  right: 0;
+  top: 0;
+  height: 300px;
+  width: 50px;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  background-color: blue;
+  cursor: pointer;
+}
+.slide--bar img {
+  border-radius: 50%;
+  height: 40px;
+  width: 40px;
+}
+#down {
+  transform: rotate(180deg);
 }
