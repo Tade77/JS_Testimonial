@@ -5,7 +5,7 @@ const down = document.getElementById("down");
 let y = 0;
 
 up.addEventListener("click", (e) => {
-  if (y > "-900") {
+  if (y > -900) {
     y = y - 300;
     slide.style.top = y + "px";
   }
@@ -13,6 +13,6 @@ up.addEventListener("click", (e) => {
 down.addEventListener("click", (e) => {
   if (y < 0) {
     y = y + 300;
-    down.style.top = y + "px ";
+    slide.style.top = y + "px ";
   }
 });
