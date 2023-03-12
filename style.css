@@ -63,7 +63,6 @@ h1::after {
   display: flex;
   align-items: center;
   gap: 30px;
-  margin-bottom: 40px;
 }
 #slide {
   width: 100%;
@@ -80,7 +79,7 @@ h1::after {
   font-size: 26px;
   color: blue;
   /* line-height: 10px; */
-  margin-bottom: 8px;
+  margin-bottom: -5px;
 }
 .spec {
   color: rgba(0, 0, 0, 0.4);
